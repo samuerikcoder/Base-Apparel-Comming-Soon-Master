@@ -107,7 +107,7 @@ p {
     display: flex;
     position: relative;
     height: 6rem;
-    max-width: 50rem;
+    max-width: 70rem;
 }
 
 input {
@@ -142,9 +142,9 @@ button {
     background-image: var(--clr-linear-gradient-2);
     font-size: 2rem;
 
-    box-shadow: 0px 13px 50px 10px var(--clr-primary-desatured-red);
-    -webkit-box-shadow: 0px 13px 50px 10px var(--clr-primary-desatured-red);
-    -moz-box-shadow: 0px 13px 50px 10px var(--clr-primary-desatured-red);
+    box-shadow: 0px 13px 20px 1x var(--clr-primary-desatured-red);
+    -webkit-box-shadow: 0px 13px 20px 1px var(--clr-primary-desatured-red);
+    -moz-box-shadow: 0px 13px 20px 1px var(--clr-primary-desatured-red);
 }
 
 button:hover,
@@ -168,12 +168,12 @@ footer {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     body {
         background-image: url(images/bg-pattern-desktop.svg);
         background-size: contain;
         grid-template-rows: 100px auto 50px;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 60% 40%;
         grid-template-areas: 
         "header aside"
         "main aside"
@@ -184,25 +184,26 @@ footer {
         height: 100%;
         width: 100%;
         grid-area: header;
-        padding: 3rem;
+        padding: 10% 20%;
     }
 
     main {
         grid-area: main;
-        padding: 0 7rem 5rem;
+        padding: 10% 20% 20%;
         place-self: center;
     }
 
+    .flex-group {
+        width: 100%;
+    }
+
     h1 {
-       font-size: 6rem; 
+       font-size: 6.5rem; 
+        letter-spacing: 20px;
     }
 
     p {
         line-height: 2;
-    }
-
-    header, main, form {
-        display: grid;
     }
 
     .text {
@@ -218,8 +219,13 @@ footer {
         grid-area: aside;
     }
 
+    picture {
+        width: 100%;
+    }
+
     picture img {
         height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -234,16 +240,4 @@ footer {
     button {
         padding: 1.8rem 5rem;
     }
-}
-
-@media (min-width: 920px) {
-    h1 {
-        font-size: 6.5rem;
-    }
-
-    header, .text, .field-group {
-        width: 65%;
-        justify-self: center;
-    }
-    
 }
