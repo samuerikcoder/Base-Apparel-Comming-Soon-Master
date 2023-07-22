@@ -168,7 +168,7 @@ footer {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     body {
         background-image: url(images/bg-pattern-desktop.svg);
         background-size: contain;
@@ -184,12 +184,12 @@ footer {
         height: 100%;
         width: 100%;
         grid-area: header;
-        padding: 10% 20%;
+        padding: 10vh 15vw;
     }
 
     main {
         grid-area: main;
-        padding: 10% 20% 20%;
+        padding: 15vh 15vw 25vh 15vw;
         place-self: center;
     }
 
@@ -199,11 +199,12 @@ footer {
 
     h1 {
        font-size: 6.5rem; 
-        letter-spacing: 20px;
+        letter-spacing: 1.5vw;
     }
 
     p {
-        line-height: 2;
+        line-height: 1.8
+        ;
     }
 
     .text {
