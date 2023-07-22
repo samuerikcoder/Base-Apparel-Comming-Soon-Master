@@ -175,8 +175,8 @@ footer {
         grid-template-rows: 100px auto 50px;
         grid-template-columns: 3fr 2fr;
         grid-template-areas: 
-        "header picture"
-        "main picture"
+        "header aside"
+        "main aside"
         "footer footer"
     }
 
@@ -214,8 +214,8 @@ footer {
         right: 14rem;
     }
 
-    picture {
-        grid-area: picture;
+    aside {
+        grid-area: aside;
     }
 
     picture img {
