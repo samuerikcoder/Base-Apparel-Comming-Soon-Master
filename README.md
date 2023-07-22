@@ -54,19 +54,12 @@ Users should be able to:
 
 Grid System: The code demonstrates the effective use of CSS Grid to create a responsive layout for the card components. The <body> uses display grid to position the <header>, <picture>, <main>, and <footer> on the screen.
 
-Flexibility with Flexbox: The .flex-group and the <footer> class utilizes display: flex to create a flexible and evenly spaced layout. The Flexbox model is powerful for arranging and aligning elements within containers.
-
-Project Planning and Structure: The HTML structure is well-organized, making use of semantic tags like <main>, <header>, <footer>, <picture>, <small>. The code shows a clear separation between the main content, the header, the main, the picture and the footer.
-
 Responsiveness: The code demonstrates a responsive design approach using media queries. By defining different styles for different screen sizes, the layout adapts to varying viewport widths.
 
 Javascript Modules: The JS files of this project were divided into modules seeking to follow good practices of clean code through factory functions with cooerent names about their functionality.
 
 E-mail Validation in JS: In this project, regular expressions were used to validate the use of e-mail.
 
-### Continued development
-
-In the next few codes I intend to explore more concepts of the flex box and the grid. I plan to start deploying animations with CSS as well and write simpler and more straightforward code. I want to explore the uses of class in JS.
 
 ### Useful resources
 
