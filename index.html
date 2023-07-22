@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/index.js" defer></script> 
+  
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" class="logo" alt="Base Apparel logo">
+  </header>
+
+  <picture>
+    <source srcset="images/hero-desktop.jpg" media="(min-width: 600px)">
+    <img src="images/hero-mobile.jpg" alt="A woman in makeup">
+  </picture>
+
+  <main>
+    <section class="text">
+      <h1> <span>We're</span> coming soon</h1>
+      <p>Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+     </p>
+    </section>
+    <form method="GET">
+      <div class="field-group">
+        <div class="flex-group">
+          <label class="sr-only" for="email">Enter your e-mail: </label>
+          <input type="email" id="email" placeholder="Email Address">
+          <img src="images/icon-error.svg" class="icon-error close" alt="An exclamation mark indicating error">
+          <button type="submit">
+            <img src="images/icon-arrow.svg" alt="an arrow rigth icon">
+          </button>
+        </div>
+        <small class="text-error close">Please provide a valide e-mail</small>
+      </div>
+    </form>
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/samuerikcoder" target="_blank">Samuerikcoder</a>.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,249 @@
+:root {
+    --hue: 0;
+    --clr-primary-desatured-red: hsl(var(--hue), 36%, 70%);
+    --clr-primary-soft-red: hsl(var(--hue), 93%, 68%);
+    
+    --clr-neutral-dark-grayish-red: hsl(var(--hue), 6%, 24%);
+
+    --clr-linear-gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
+    --clr-linear-gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+    font-size: 62.5%;
+    --fs-main: 1.6rem;
+    --ff-main: 'Josefin Sans', sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.close {
+    display: none;
+}
+
+body {
+    min-height: 100dvh;
+    display: grid;
+
+    background-color: var(--clr-linear-gradient-1);
+}
+
+body, input {
+    font-size: var(--fs-main);
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-main);
+    color: var(--clr-primary-desatured-red);
+}
+
+header {
+    padding: 3rem 3rem;
+    align-self: center;
+    justify-self: self-start;
+}
+
+header .logo {
+     height: 3rem; 
+}
+
+picture img {
+    width: 100%;
+}
+
+main {
+    padding: 5rem 3.5rem;
+}
+
+.text {
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+    margin: 2.5rem 0 3rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1rem;
+    color: var(--clr-neutral-dark-grayish-red);
+    line-height: 1.2;
+}
+
+span {
+    font-weight: var(--fw-light);
+    color: var(--clr-primary-desatured-red);
+}
+
+p {
+    line-height: 1.7;
+}
+
+.field-group {
+    display: grid;
+    gap: 1rem;
+}
+
+.flex-group  {
+    display: flex;
+    position: relative;
+    height: 6rem;
+    max-width: 50rem;
+}
+
+input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border-radius: 40rem;
+    outline: none;
+    border: 1px solid var(--clr-primary-desatured-red);
+}
+
+::placeholder {
+    color: var(--clr-primary-desatured-red);
+    opacity: .5;
+}
+
+.icon-error {
+    position: absolute;
+    top: 30%;
+    right: 8rem;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    border-radius: 40rem;
+    border: none;
+    padding: 1.8rem 3.3rem;
+    color: var(--clr-linear-gradient-1);
+    background-image: var(--clr-linear-gradient-2);
+    font-size: 2rem;
+
+    box-shadow: 0px 13px 50px 10px var(--clr-primary-desatured-red);
+    -webkit-box-shadow: 0px 13px 50px 10px var(--clr-primary-desatured-red);
+    -moz-box-shadow: 0px 13px 50px 10px var(--clr-primary-desatured-red);
+}
+
+button:hover,
+button:focus {
+    opacity: .8;
+}
+
+.text-error {
+    color: var(--clr-primary-soft-red);
+    place-self: start;
+    padding: .5rem 2rem;
+}
+
+footer {
+    background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        text-align: center;
+}
+
+
+@media (min-width: 600px) {
+    body {
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: contain;
+        grid-template-rows: 100px auto 50px;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: 
+        "header picture"
+        "main picture"
+        "footer footer"
+    }
+
+    header {
+        height: 100%;
+        width: 100%;
+        grid-area: header;
+        padding: 3rem;
+    }
+
+    main {
+        grid-area: main;
+        padding: 0 7rem 5rem;
+        place-self: center;
+    }
+
+    h1 {
+       font-size: 6rem; 
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    header, main, form {
+        display: grid;
+    }
+
+    .text {
+        text-align: left;
+        margin-bottom: 5rem;
+    }
+
+    .icon-error {
+        right: 14rem;
+    }
+
+    picture {
+        grid-area: picture;
+    }
+
+    picture img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .attribution a {
+         color: hsl(228, 45%, 44%); 
+        }
+    
+    button {
+        padding: 1.8rem 5rem;
+    }
+}
+
+@media (min-width: 920px) {
+    h1 {
+        font-size: 6.5rem;
+    }
+
+    header, .text, .field-group {
+        width: 65%;
+        justify-self: center;
+    }
+    
+}
