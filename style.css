@@ -189,7 +189,7 @@ footer {
 
     main {
         grid-area: main;
-        padding: 15vh 15vw 25vh 15vw;
+        padding: 15vh 15vw 30vh 15vw;
         place-self: center;
     }
 
