@@ -52,7 +52,7 @@ Users should be able to:
 
 ### What I learned
 
-Grid System: The code demonstrates the effective use of CSS Grid to create a responsive layout for the card components. The <body> uses display grid to position the <header>, <picture>, <main>, and <footer> on the screen.
+Grid System: The code demonstrates the effective use of CSS Grid to create a responsive layout for the card components. The body uses display grid to position the header, picture, main, and footer on the screen.
 
 Responsiveness: The code demonstrates a responsive design approach using media queries. By defining different styles for different screen sizes, the layout adapts to varying viewport widths.
 
